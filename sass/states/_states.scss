@@ -1,0 +1,58 @@
+.site-header__menu__link {
+  .site-header__menu__icon {
+    &.is-hidden {
+      display:none;
+    }
+  }
+}
+
+.button {
+    &.is-icon {
+      padding:5px 20px;
+      .svg { height:17px; }
+    }
+}
+
+.is-hidden-small {
+  @include media(max-width $small-screen) {
+    display:none !important;
+  }
+}
+
+.is-hidden-small-up {
+  @include media(min-width $small-screen) {
+    display:none !important;
+  }
+}
+
+.is-hidden-medium {
+  @include media(max-width $medium-screen) {
+    display:none !important;
+  }
+}
+
+.is-hidden-medium-up {
+  @include media(min-width $medium-screen) {
+    display:none !important;
+  }
+}
+
+.is-hidden-large {
+  @include media(max-width $large-screen) {
+    display:none !important;
+  }
+}
+
+.is-hidden-large-up {
+  @include media(min-width $large-screen) {
+    display:none !important;
+  }
+}
+
+.is-centered-text {
+  text-align:center;
+}
+
+.is-circular {
+  border-radius:50%;
+}

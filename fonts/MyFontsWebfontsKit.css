@@ -1,0 +1,27 @@
+/**
+ * @license
+ * MyFonts Webfont Build ID 3177217, 2016-02-25T14:55:49-0500
+ * 
+ * The fonts listed in this notice are subject to the End User License
+ * Agreement(s) entered into by the website owner. All other parties are 
+ * explicitly restricted from using the Licensed Webfonts(s).
+ * 
+ * You may obtain a valid license at the URLs below.
+ * 
+ * Webfont: ParfumerieScriptText by Typesenses
+ * URL: http://www.myfonts.com/fonts/typesenses/parfumerie-script-pro/text/
+ * Copyright: Copyright (c) 2011 by Typesenses. All rights reserved.
+ * Licensed pageviews: 10,000
+ * 
+ * 
+ * License: http://www.myfonts.com/viewlicense?type=web&buildid=3177217
+ * 
+ * © 2016 MyFonts Inc
+*/
+
+
+/* @import must be at top of file, otherwise CSS will not work */
+@import url("//hello.myfonts.net/count/307b01");
+
+@font-face {font-family: 'ParfumerieScriptText';src: url('webfonts/307B01_0_0.eot');src: url('webfonts/307B01_0_0.eot?#iefix') format('embedded-opentype'),url('webfonts/307B01_0_0.woff2') format('woff2'),url('webfonts/307B01_0_0.woff') format('woff'),url('webfonts/307B01_0_0.ttf') format('truetype');}
+ 

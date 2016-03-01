@@ -1,0 +1,199 @@
+fieldset {
+  background-color: transparent;
+  border: 0;
+  margin: 0;
+  padding: 0;
+}
+
+legend {
+  font-weight: 600;
+  margin-bottom: $small-spacing / 2;
+  padding: 0;
+}
+
+label {
+  display: block;
+  font-weight: 600;
+  margin-bottom: $small-spacing / 2;
+}
+
+input,
+select {
+  display: block;
+  font-family: $base-font-family;
+  font-size: $base-font-size;
+}
+
+#{$all-text-inputs},
+select[multiple] {
+  background-color: #ffffff;
+  border: $base-border;
+  border-radius: $base-border-radius;
+  box-shadow: $form-box-shadow;
+  box-sizing: border-box;
+  font-family: $base-font-family;
+  font-size: rem(16);
+  margin-bottom: $small-spacing * 0.5;
+  padding: $base-spacing / 3;
+  transition: border-color $base-duration $base-timing;
+  width: 100%;
+
+  &::placeholder {
+    text-align:center;
+    vertical-align: center;
+    opacity:1;
+    color:lighten($medium-gray, 15%);
+    overflow: auto;
+  }
+
+  &:hover {
+    border-color: shade($base-border-color, 20%);
+  }
+
+  &:focus {
+    border-color: $action-color;
+    box-shadow: $form-box-shadow-focus;
+    outline: none;
+  }
+
+  &:disabled {
+    background-color: shade($base-background-color, 5%);
+    cursor: not-allowed;
+
+    &:hover {
+      border: $base-border;
+    }
+  }
+
+  @include media(min-width $large-screen) {
+    text-align:center;
+  }
+}
+
+textarea {
+  resize: vertical;
+  height:rem(150);
+}
+
+[type="search"] {
+  appearance: none;
+}
+
+[type="checkbox"],
+[type="radio"] {
+  display: inline;
+  margin-right: $small-spacing / 2;
+}
+
+[type="file"] {
+  margin-bottom: $small-spacing;
+  width: 100%;
+}
+
+select {
+  margin-bottom: $base-spacing;
+  max-width: 100%;
+  width: auto;
+}
+
+/*
+ * Contact Form 7 styles
+ */
+
+/* General form styles */
+.wpcf7-form {
+  @include media(min-width $large-screen) {
+    text-align:center;
+
+    input[type="submit"] {
+      margin:0 auto;
+    }
+
+    .wpcf7-form-control {
+      display:flex;
+      flex-direction:row;
+      justify-content:center;
+      align-content:center;
+      align-items:center;
+
+    }
+  }
+
+  .wpcf7-not-valid-tip {
+    background-color:tint(red,90%);
+    display:block;
+    margin-top:-($small-spacing * 0.5);
+  }
+
+  .wpcf7-response-output {
+    margin:0;
+    padding:rem(10);
+  }
+
+  .wpcf7-validation-errors {
+    border:0;
+    background-color:tint(orange, 70%);
+  }
+  .wpcf7-mail-sent-ok {
+    border:0;
+    background-color:tint(green, 70%);
+  }
+  .wpcf7-mail-sent-ng {
+    border:0;
+    background-color:tint(red, 70%);
+  }
+}
+
+/* Contact Form 7 radio buttons */
+.wpcf7-radio,
+.wpcf7-checkbox {
+
+  &> span {
+    display:block;
+    position:relative;
+    width:100%;
+    display:block;
+    margin:0;
+
+    .wpcf7-list-item-label {
+      position: relative;
+      cursor: pointer;
+      font-weight:400;
+    }
+
+    input[type=radio],
+    input[type=checkbox] {
+      display:none;
+
+      &+ .wpcf7-list-item-label:before {
+        content: '';
+        border: 1px solid $medium-gray;
+        border-radius: rem(5);
+        display: inline-block;
+        vertical-align: middle;
+        width: rem(32);
+        height: rem(32);
+        padding: 2px;
+        margin-right: 10px;
+        text-align: center;
+      }
+
+      &:checked + .wpcf7-list-item-label {
+        //font-weight:700;
+
+        &:before {
+          background: url('data:image/svg+xml;utf8,<svg version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+	 width="24px" height="24px" viewBox="0 0 415.582 415.582" style="enable-background:new 0 0 415.582 415.582;"
+	 xml:space="preserve">
+<g>
+	<path d="M411.47,96.426l-46.319-46.32c-5.482-5.482-14.371-5.482-19.853,0L152.348,243.058l-82.066-82.064
+		c-5.48-5.482-14.37-5.482-19.851,0l-46.319,46.32c-5.482,5.481-5.482,14.37,0,19.852l138.311,138.31
+		c2.741,2.742,6.334,4.112,9.926,4.112c3.593,0,7.186-1.37,9.926-4.112L411.47,116.277c2.633-2.632,4.111-6.203,4.111-9.925
+		C415.582,102.628,414.103,99.059,411.47,96.426z"/>
+</g></svg>') center no-repeat, $action-color;
+        }
+      }
+    }
+  }
+}
+

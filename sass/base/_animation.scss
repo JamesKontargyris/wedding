@@ -1,0 +1,12 @@
+@include keyframes(bounce) {
+  0%, 100% {
+    @include transform(translateY(0));
+  }
+  50% {
+    @include transform(translateY(-15px));
+  }
+}
+
+.bounce {
+  @include animation(bounce 2s infinite);
+}

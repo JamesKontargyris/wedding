@@ -1,0 +1,27 @@
+@mixin font-size($sizeValue: 1.6) {
+  font-size: ($sizeValue * 10) + px;
+  font-size: $sizeValue + rem;
+}
+
+// column mixins
+@mixin grid($target, $context){
+  width: (($target/$context)*100%);
+}
+
+// margin mixins
+@mixin mleft($target, $context){
+  margin-left: (($target/$context)*100%);
+}
+@mixin mright($target, $context){
+  margin-right: (($target/$context)*100%);
+}
+
+// strip units from a value
+@function strip-unit($number) {
+  @if type-of($number) == 'number' and not unitless($number) {
+    @return $number / ($number * 0 + 1);
+  }
+
+  @return $number;
+}
+

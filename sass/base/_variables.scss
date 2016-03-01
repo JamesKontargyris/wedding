@@ -1,0 +1,44 @@
+// Typography
+$base-font-family: 'Open Sans', Arial, sans-serif;
+$heading-font-family: 'Cardo', Georgia, serif;
+
+// Font Sizes
+$base-font-size: 1em;
+
+// Line height
+$base-line-height: 1.75;
+$heading-line-height: 1.4;
+
+// Other Sizes
+$base-border-radius: 3px;
+$base-spacing: $base-line-height * 1em;
+$small-spacing: $base-spacing / 2;
+$base-z-index: 0;
+
+// Colors
+$duck-egg: #9ac8d9;
+$pink: #f59aab;
+$dark-gray: #333;
+$medium-gray: #8a8a8a;
+$light-gray: #d6d6d6;
+
+// Font Colors
+$base-font-color: $dark-gray;
+$action-color: $duck-egg;
+$secondary-color: $pink;
+
+// Border
+$base-border-color: $medium-gray;
+$base-border: 1px solid $base-border-color;
+
+// Background Colors
+$base-background-color: #fafafa;
+$secondary-background-color: tint($base-border-color, 75%);
+
+// Forms
+$form-box-shadow: inset 0 1px 3px rgba(#000, 0.06);
+$form-box-shadow-focus: $form-box-shadow, 0 0 5px adjust-color($action-color, $lightness: -5%, $alpha: -0.3);
+
+// Animations
+$base-duration: 150ms;
+$base-timing: ease;

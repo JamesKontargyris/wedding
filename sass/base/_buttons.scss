@@ -1,0 +1,62 @@
+#{$all-buttons},
+.button {
+  appearance: none;
+  border: 0;
+  border-radius: 50px;
+  cursor: pointer;
+  display: inline-block;
+  @extend .serif-upper;
+  font-size: $base-font-size;
+  -webkit-font-smoothing: antialiased;
+  font-weight: 600;
+  line-height: 1;
+  padding: 8px 20px;
+  text-decoration: none;
+  transition: background-color $base-duration $base-timing;
+  user-select: none;
+  vertical-align: middle;
+  white-space: nowrap;
+  text-transform: uppercase;
+
+  &.button-primary {
+    @include background(linear-gradient(top, $action-color 80%, #8cb6c6 100%));
+    //box-shadow:0 1px 0 rgba(0,0,0,0.3);
+    text-shadow:0 -1px 0 darken($action-color, 20%);
+    color: #fff;
+  }
+
+  &.button-secondary {
+    border:1px solid $medium-gray;
+    color: $action-color;
+    rect, path, polygon {
+      fill:$action-color;
+    }
+    &:hover,
+    &:focus {
+      border:1px solid $secondary-color;
+    }
+  }
+
+  &.button-big {
+    font-size:rem(21);
+    line-height:em(24);
+  }
+
+  &:hover,
+  &:focus {
+    background: $secondary-color;
+    color: #fff;
+    rect, path, polygon {
+      fill:#fff;
+    }
+  }
+
+  &:disabled {
+    cursor: not-allowed;
+    opacity: 0.5;
+
+    &:hover {
+      background-color: $action-color;
+    }
+  }
+}
