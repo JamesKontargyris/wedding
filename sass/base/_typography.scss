@@ -69,6 +69,7 @@ h2 {
 
   .heading-bells {
     position:absolute;
+    display:block;
     bottom:-15px;
     left:50%;
     margin-left:-15px;
@@ -104,7 +105,7 @@ h2 {
 
   @include media($medium-screen) {
     letter-spacing:rem(10);
-    margin:0 auto rem(60);
+    margin:0 auto rem(40);
   }
 }
 
@@ -141,11 +142,18 @@ h5 {
   color:$medium-gray;
   font-size:rem(18);
   line-height:rem(24);
-  margin-bottom:rem(15);
+  margin-bottom:rem(25);
 }
 
 p {
   margin: 0 0 $small-spacing;
+
+  @include media(min-width $large-screen) {
+    &.narrow {
+      padding-left:rem($column);
+      padding-right:rem($column);
+    }
+  }
 }
 
 a {
@@ -180,4 +188,8 @@ picture {
   @include media(min-width $medium-screen) {
     letter-spacing: rem(4);
   }
+}
+
+.center {
+  text-align:center;
 }

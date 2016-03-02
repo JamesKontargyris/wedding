@@ -26,7 +26,10 @@ get_header(); ?>
 
                 <div class="home-hero__content-container">
                     <div class="home-hero__artwork">
-                        <img class="home-hero__artwork__wedgwood" src="<?php echo get_template_directory_uri(); ?>/img/home-hero.svg" alt="<?php bloginfo( 'name' ); ?>">
+                        <img class="home-hero__artwork__wedgwood artwork-1" src="<?php echo get_template_directory_uri(); ?>/img/home-hero-letters.svg" alt="<?php bloginfo( 'name' ); ?>">
+                        <img class="home-hero__artwork__wedgwood artwork-2" src="<?php echo get_template_directory_uri(); ?>/img/home-hero-silhouettes.svg" alt="<?php bloginfo( 'name' ); ?>">
+                        <img class="home-hero__artwork__wedgwood artwork-3" src="<?php echo get_template_directory_uri(); ?>/img/home-hero-pattern.svg" alt="<?php bloginfo( 'name' ); ?>">
+
                         <img class="home-hero__artwork__silhouettes" src="<?php echo get_template_directory_uri(); ?>/img/home-hero-small.svg" alt="<?php bloginfo( 'name' ); ?>">
                     </div>
                     <div class="home-hero__title">
@@ -75,7 +78,9 @@ get_header(); ?>
                 <div class="card__content">
                     <h2>The Big Day<div class="heading-bells"></div></h2>
                     <div class="itinerary__event">
-                        <img class="svg itinerary__event__icon circle-icon" src="<?php echo get_template_directory_uri(); ?>/img/icon-wedding-rings.svg" alt="Wedding Rings">
+                        <div class="circle-icon">
+                            <img class="svg itinerary__event__icon" src="<?php echo get_template_directory_uri(); ?>/img/icon-wedding-rings.svg" alt="Wedding Rings">
+                        </div>
                         <div class="itinerary__event__title">
                             <div class="itinerary__event__title__serif">The</div>
                             <div class="itinerary__event__title__cursive">Ceremony</div>
@@ -91,7 +96,9 @@ get_header(); ?>
                         </div>
                     </div>
                     <div class="itinerary__event">
-                        <img class="svg itinerary__event__icon circle-icon" src="<?php echo get_template_directory_uri(); ?>/img/icon-champagne-flute.svg" alt="Wedding Rings">
+                        <div class="circle-icon">
+                            <img class="svg itinerary__event__icon" src="<?php echo get_template_directory_uri(); ?>/img/icon-champagne-flute.svg" alt="Wedding Rings">
+                        </div>
                         <div class="itinerary__event__title">
                             <div class="itinerary__event__title__serif">The</div>
                             <div class="itinerary__event__title__cursive">Reception</div>
@@ -108,7 +115,9 @@ get_header(); ?>
                         </div>
                     </div>
                     <div class="itinerary__event">
-                        <img class="svg itinerary__event__icon circle-icon" src="<?php echo get_template_directory_uri(); ?>/img/icon-mask.svg" alt="Wedding Rings">
+                        <div class="circle-icon">
+                            <img class="svg itinerary__event__icon" src="<?php echo get_template_directory_uri(); ?>/img/icon-mask.svg" alt="Wedding Rings">
+                        </div>
                         <div class="itinerary__event__title">
                             <div class="itinerary__event__title__serif">The</div>
                             <div class="itinerary__event__title__cursive">Wrap Party</div>

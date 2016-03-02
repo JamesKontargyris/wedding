@@ -69,7 +69,8 @@
   }
   .site-header__header-links {
     text-align:right;
-  svg { width:24px; height:32px; }
+    svg { width:24px; height:32px; }
+    .button + .button { margin-left:0; }
   }
 }
 

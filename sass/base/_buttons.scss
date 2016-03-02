@@ -1,22 +1,27 @@
 #{$all-buttons},
 .button {
+  font-family:$heading-font-family;
   appearance: none;
   border: 0;
   border-radius: 50px;
   cursor: pointer;
-  display: inline-block;
-  @extend .serif-upper;
-  font-size: $base-font-size;
+  display: block;
+  font-size: rem(14);
   -webkit-font-smoothing: antialiased;
   font-weight: 600;
   line-height: 1;
-  padding: 8px 20px;
+  padding: rem(8);
   text-decoration: none;
   transition: background-color $base-duration $base-timing;
   user-select: none;
   vertical-align: middle;
   white-space: nowrap;
   text-transform: uppercase;
+  margin-bottom:$small-spacing;
+
+  & + .button {
+    margin-left:rem(10);
+  }
 
   &.button-primary {
     @include background(linear-gradient(top, $action-color 80%, #8cb6c6 100%));
@@ -37,11 +42,6 @@
     }
   }
 
-  &.button-big {
-    font-size:rem(21);
-    line-height:em(24);
-  }
-
   &:hover,
   &:focus {
     background: $secondary-color;
@@ -57,6 +57,20 @@
 
     &:hover {
       background-color: $action-color;
+    }
+  }
+}
+
+@include media(min-width $medium-screen) {
+  #{$all-buttons},
+  .button {
+    font-size:$base-font-size;
+    display: inline-block;
+    padding: rem(8) rem(20);
+
+    &.button-big {
+      font-size:rem(21);
+      line-height:em(24);
     }
   }
 }

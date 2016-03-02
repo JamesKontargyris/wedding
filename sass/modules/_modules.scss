@@ -36,6 +36,10 @@
 .card-shallow {
   @extend .card;
   padding: rem(25) rem(20);
+
+  @include media($medium-screen) {
+    padding:rem(45) rem(20);
+  }
 }
 
 .photos-row {
@@ -159,13 +163,65 @@
 .circle-icon {
   display:none;
   @include media(min-width $small-screen) {
-    display:inline-block;
+    display:block;
     width:rem(64);
     height:rem(64);
     padding:rem(12);
     border-radius:50%;
     border:2px dotted $light-gray;
-    fill:$secondary-color;
-    margin-bottom:rem(20);
+    margin:0 auto rem(20);
+    text-align: center;
+    svg {
+      fill:$secondary-color;
+    }
+  }
+}
+
+.sub-nav__menu {
+  display:flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-content: center;
+  align-items: center;
+
+  li {
+    display:block;
+    float:left;
+    width:100%;
+    text-align:center;
+    &:not(:last-child) {
+      border-right:1px solid lighten($medium-gray, 10%);
+    }
+    &:not(:first-child) {
+      border-left:1px solid darken($medium-gray, 10%);
+    }
+
+    a {
+      display:block;
+      padding:rem(10) 0;
+      transition:0.7s all;
+
+      svg {
+        fill:$light-gray;
+        width:rem(24);
+      }
+
+      &:hover {
+        background-color:lighten($medium-gray, 10%);
+
+        svg {
+          fill:$medium-gray;
+        }
+      }
+    }
+
+    @include media(min-width $medium-screen) {
+      a {
+        svg {
+          width:rem(32);
+        }
+      }
+    }
+
   }
 }

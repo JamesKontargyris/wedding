@@ -1,0 +1,233 @@
+.vertical-tabs-container {
+  $base-border-color: gainsboro !default;
+  $base-border-radius: 3px !default;
+  $base-background-color: transparent !default;
+  $base-line-height: 1.5rem !default;
+  $base-spacing: 1.5rem !default;
+  $action-color: tint(#9ac8d9,75%) !default;
+  $dark-gray: #333 !default;
+  $small-screen: 480px;
+  $medium-screen: 610px;
+  $large-screen: 900px;
+  $base-font-color: $dark-gray !default;
+  $tab-border-color: $base-border-color;
+  $tab-border: 1px solid $tab-border-color;
+  $tab-border-radius: $base-border-radius;
+  $tab-content-background: $action-color;
+  $tab-active-color: $action-color;
+  $tab-inactive-color: $base-background-color;
+  $vertical-tabs-height: auto;
+  $vertical-tab-mode: $large-screen;
+
+  @include clearfix;
+  border-radius: $tab-border-radius;
+  //border: $tab-border;
+  margin-bottom: $base-spacing;
+  overflow: hidden;
+
+  p {
+    margin:0;
+  }
+
+  li {
+    list-style: none;
+  }
+
+  a {
+    color: $action-color;
+    text-decoration: none;
+  }
+
+  .vertical-tabs {
+    display: none;
+
+    @include media($vertical-tab-mode) {
+      background-color: $tab-inactive-color;
+      display: inline;
+      float: left;
+      height: $vertical-tabs-height;
+      width: 30%;
+      padding-top:rem(20);
+    }
+  }
+
+  .vertical-tab {
+    @include media($vertical-tab-mode) {
+      display: block;
+      font-weight: bold;
+      margin-right: -1px;
+      padding: ($base-spacing / 2) ($gutter / 2);
+      font-family:'Cardo', Georgia, serif;
+      text-transform: uppercase;
+      line-height:1.2;
+      cursor: pointer;
+      border-radius:7px 0 0 7px;
+
+      &.is-active {
+        background-color: $tab-content-background;
+        margin-right: -1px;
+      }
+    }
+  }
+
+  a.vertical-tab-accordion-heading,
+  a.vertical-tab {
+    color: #8a8a8a;
+    font-family:'Cardo', Georgia, serif;
+    text-transform: uppercase;
+    line-height:1.2;
+    cursor: pointer;
+
+    &:hover {
+      color: darken($action-color, 20%);
+    }
+  }
+
+  .vertical-tab:focus {
+    outline: none;
+  }
+
+  .vertical-tab-content-container {
+    display: block;
+    margin: 0 auto;
+
+    & a:focus {
+      outline: none;
+    }
+
+    @include media($vertical-tab-mode) {
+      @include size(70% $vertical-tabs-height);
+      background-color: $tab-content-background;
+      display: inline-block;
+      border-radius:7px;
+    }
+  }
+
+  .vertical-tab-content {
+    background-color: $tab-content-background;
+    padding: $base-spacing $gutter;
+
+    p {
+      color: $base-font-color;
+      line-height: $base-line-height;
+      margin-bottom:rem(20);
+    }
+
+    @include media($vertical-tab-mode) {
+      border: none;
+      display: none;
+      border-radius:7px;
+    }
+  }
+
+  .vertical-tab-accordion-heading {
+    background-color: $tab-inactive-color;
+    border-top: $tab-border;
+    cursor: pointer;
+    display: block;
+    font-weight: bold;
+    padding: $base-spacing / 2 $gutter / 2;
+
+    &:before {
+      content:'\25BC';
+      padding-right:rem(10);
+    }
+
+    &:focus,
+    &:hover {
+      color: darken($action-color, 20%);
+    }
+
+    &:first-child {
+      border-top: none;
+    }
+
+    &.is-active {
+      background: $tab-active-color;
+      border-bottom: none;
+      padding: $base-spacing / 2 $gutter / 2 0;
+
+      &:before {
+        content:none;
+      }
+    }
+
+    @include media($vertical-tab-mode) {
+      display: none;
+    }
+  }
+}
+
+// Based on code by Jett Miller jettmiller.net
+
+
+.accordion-tabs-minimal {
+  $base-border-color: #dcdcdc !default;
+  $base-background-color: #fff !default;
+  $base-spacing: 1.5em !default;
+  $action-color: #477dca !default;
+  $dark-gray: #333 !default;
+  $medium-screen: em(640) !default;
+  $tab-link-color: $dark-gray;
+  $tab-border: 1px solid $base-border-color;
+  $tab-active-background: $base-background-color;
+  $tab-inactive-color: $base-background-color;
+  $tab-inactive-hover-color: #c0c0c0;
+  $tab-mode: $medium-screen;
+
+  @include clearfix;
+  line-height: 1.5;
+  padding: 0;
+
+  .tab-header-and-content {
+    list-style: none;
+
+    @include media($tab-mode) {
+      display: inline;
+    }
+  }
+
+  .tab-link {
+    background-color: $tab-inactive-color;
+    border-top: $tab-border;
+    color: $tab-link-color;
+    display: block;
+    padding: ($base-spacing / 2) $gutter;
+    text-decoration: none;
+
+    @include media($tab-mode) {
+      border-top: 0;
+      display: inline-block;
+    }
+
+    &:hover {
+      color: $action-color;
+    }
+
+    &:focus {
+      outline: none;
+    }
+
+    &.is-active {
+      border-bottom: 0;
+
+      @include media($tab-mode) {
+        border: $tab-border;
+        border-bottom-color: $tab-active-background;
+        margin-bottom: -1px;
+      }
+    }
+  }
+
+  .tab-content {
+    display: none;
+    padding: $base-spacing $gutter;
+    width: 100%;
+
+    @include media($tab-mode) {
+      border-top: $tab-border;
+      float: left;
+    }
+  }
+}
+

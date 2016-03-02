@@ -52,19 +52,28 @@
     });
 
     /* Homepage fade-in of hero elements */
-    $('.home-hero__title__small-text, .home-hero__title__medium-text, .home-hero__title__large-text, .home-hero__artwork, .home-hero__scroll-arrow').css('opacity', '0');
-    $('.home-hero__artwork').delay(500).animate({opacity:1}, 1000, function()
-    {
-        $('.home-hero__title__small-text').delay(1000).animate({opacity:1}, 1000, function()
+    if($( window ).width() > 570) {
+
+        $('.home-hero__title__small-text, .home-hero__title__medium-text, .home-hero__title__large-text, .home-hero__artwork__wedgwood, .home-hero__scroll-arrow').css('opacity', '0');
+        $('.artwork-1').delay(150).animate({opacity:1}, 1000, function()
         {
-            $('.home-hero__title__large-text').animate({opacity:1}, 1000, function()
+            $('.artwork-2').delay(300).animate({opacity:1}, 1000, function()
             {
-                $('.home-hero__title__medium-text').delay(500).animate({opacity:1}, 1000, function() {
-                    $('.home-hero__scroll-arrow').delay(2000).animate({opacity:1}, 1000);
+                $('.artwork-3').delay(100).animate({opacity:1}, 1000);
+            })
+
+            $('.home-hero__title__small-text').delay(2200).animate({opacity:1}, 1000, function()
+            {
+                $('.home-hero__title__large-text').animate({opacity:1}, 1000, function()
+                {
+                    $('.home-hero__title__medium-text').delay(500).animate({opacity:1}, 1000, function() {
+                        $('.home-hero__scroll-arrow').delay(2000).animate({opacity:1}, 1000);
+                    });
                 });
             });
         });
-    });
+
+    }
 
     /* Footer countdown */
     var weddingDate = '2016/09/10';
@@ -125,7 +134,7 @@
         e.preventDefault();
 
         // top position relative to the document
-        var pos = $(id).offset().top - 20;
+        var pos = $(id).offset().top - 80;
 
         // animated top scrolling
         $('body, html').animate({scrollTop: pos}, 1000);

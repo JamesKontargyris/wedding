@@ -124,6 +124,7 @@ function wedding_scripts() {
 
 	wp_enqueue_script( 'wedding-countdown-js', get_template_directory_uri() . '/js/jquery.countdown.min.js', array(), '20160224', true );
 	wp_enqueue_script( 'wedding-popup-js', get_template_directory_uri() . '/js/magnific-popup.min.js', array(), '20160229', true );
+	wp_enqueue_script( 'wedding-refills-js', get_template_directory_uri() . '/js/refills.js', array(), '20160301', true );
     wp_enqueue_script( 'wedding-site-js', get_template_directory_uri() . '/js/site.js', array(), '20160222', true );
 
     if ( is_singular() && comments_open() && get_option( 'thread_comments' ) ) {
@@ -169,4 +170,17 @@ function is_in_future($date) {
 		return true;
 	}
 	return false;
+}
+
+/* Plugin Name: Theme URI Shortcode */
+
+add_shortcode('theme_uri', 'wpse_66026_theme_uri_shortcode' );
+
+function wpse_66026_theme_uri_shortcode( $attrs = array (), $content = '' )
+{
+    $theme_uri = is_child_theme()
+        ? get_stylesheet_directory_uri()
+        : get_template_directory_uri();
+
+    return trailingslashit( $theme_uri );
 }

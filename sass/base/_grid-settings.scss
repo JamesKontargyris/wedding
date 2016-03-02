@@ -16,17 +16,25 @@ $xlarge-screen: 1300px;
 $medium-screen-up: new-breakpoint(min-width $medium-screen 4);
 $large-screen-up: new-breakpoint(min-width $large-screen 8);
 
-.l-half {
+
+.row {
+  @include row();
+  @include clearfix();
+  margin-bottom:rem(0);
+}
+
+.l-half, .l-third, .l-fourth, .l-fifth, .l-sixth {
   margin-bottom:rem(30);
 
+}
+.l-half {
   @include media($large-screen) {
     float:left;
     @include grid((strip-unit($column) + strip-unit($gutter)) * ($grid-columns / 2) - strip_unit($gutter), strip_unit($max-width));
-    &:not(:last-child) {
-      @include mright(strip-unit($gutter), strip_unit($max-width));
-    }
+    @include mright(strip-unit($gutter), strip_unit($max-width));
     &:nth-child(2n) {
-      @include clearfix();
+      margin-right:0;
+      //@include clearfix();
     }
   }
 }
@@ -36,7 +44,17 @@ $large-screen-up: new-breakpoint(min-width $large-screen 8);
 }
 
 .l-fourth {
-  @include grid(240, strip_unit($max-width));
+  @include media($large-screen) {
+    float:left;
+    @include grid((strip-unit($column) + strip-unit($gutter)) * ($grid-columns / 4) - strip_unit($gutter), strip_unit($max-width));
+    &:not(:last-child) {
+      @include mright(strip-unit($gutter), strip_unit($max-width));
+    }
+    &:nth-child(2n) {
+      margin:0;
+      //@include clearfix();
+    }
+  }
 }
 
 .l-fifth {
