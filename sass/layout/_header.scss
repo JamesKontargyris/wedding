@@ -70,6 +70,7 @@
   .site-header__header-links {
     text-align:right;
     svg { width:24px; height:32px; }
+    .button { display:inline-block; }
     .button + .button { margin-left:0; }
   }
 }

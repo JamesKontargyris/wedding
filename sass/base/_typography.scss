@@ -29,6 +29,15 @@ h6 {
   &.spread {
     letter-spacing:rem(5);
   }
+  &.left {
+    text-align:left;
+  }
+  &.right {
+    text-align: right;
+  }
+  &.small-bottom-margin {
+    margin-bottom:rem(25) !important;
+  }
 
   @include media(min-width $large-screen) {
     &.narrow {
@@ -145,6 +154,13 @@ h5 {
   margin-bottom:rem(25);
 }
 
+h5 {
+  color:$medium-gray;
+  font-size:rem(16);
+  line-height:rem(24);
+  margin-bottom:rem(25);
+}
+
 p {
   margin: 0 0 $small-spacing;
 
@@ -153,6 +169,10 @@ p {
       padding-left:rem($column);
       padding-right:rem($column);
     }
+  }
+
+  &.no-bottom-margin {
+    margin-bottom:0;
   }
 }
 

@@ -133,7 +133,9 @@ get_header(); ?>
 
                         </div>
                     </div>
+
                 </div>
+                <p class="center no-bottom-margin"><a href="/important-info" class="button button-primary">Important Info</a></p>
             </section><!--.itinerary-->
 
             <a name="rsvp"></a>

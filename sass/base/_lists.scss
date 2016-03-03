@@ -17,3 +17,11 @@ dl {
     margin: 0;
   }
 }
+
+ul.bullet-list {
+  list-style-type:circle;
+  padding-left:rem(20);
+  li {
+    margin-bottom:rem(20);
+  }
+}

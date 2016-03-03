@@ -40,7 +40,27 @@ $large-screen-up: new-breakpoint(min-width $large-screen 8);
 }
 
 .l-third {
-  @include grid(320,  strip_unit($max-width));
+  @include media($large-screen) {
+    float:left;
+    @include grid((strip-unit($column) + strip-unit($gutter)) * ($grid-columns / 3) - strip_unit($gutter), strip_unit($max-width));
+    @include mright(strip-unit($gutter), strip_unit($max-width));
+    &:nth-child(3n) {
+      margin-right:0;
+      //@include clearfix();
+    }
+  }
+
+  & + .l-two-thirds {
+    margin-right:0;
+  }
+}
+
+.l-two-thirds {
+  @include media($large-screen) {
+    float:left;
+    @include grid(((strip-unit($column) + strip-unit($gutter)) * ($grid-columns / 3) * 2) - strip_unit($gutter), strip_unit($max-width));
+    @include mright(strip-unit($gutter), strip_unit($max-width));
+  }
 }
 
 .l-fourth {
