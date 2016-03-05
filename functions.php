@@ -44,6 +44,7 @@ function wedding_setup() {
 
     add_image_size( 'hotel-desktop', 640, 480, true );
     add_image_size( 'hotel-mobile', 640, 320, true );
+    add_image_size( 'venue-preview', 300, 200, true );
 
 	// This theme uses wp_nav_menu() in one location.
 	register_nav_menus( array(
