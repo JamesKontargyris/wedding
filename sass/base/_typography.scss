@@ -1,8 +1,13 @@
 body {
   color: $base-font-color;
   font-family: $base-font-family;
-  font-size: $base-font-size;
-  line-height: $base-line-height;
+  font-size: $base-font-size * 0.9;
+  line-height: $base-line-height * 0.8;
+
+  @include media(min-width $small-screen) {
+    font-size: $base-font-size;
+    line-height: $base-line-height;
+  }
 }
 
 h1,
@@ -41,8 +46,8 @@ h6 {
 
   @include media(min-width $large-screen) {
     &.narrow {
-      padding-left:rem(200);
-      padding-right:rem(200);
+      padding-left:rem(160);
+      padding-right:rem(160);
     }
   }
 }
@@ -124,6 +129,7 @@ h3 {
   line-height:rem(28);
   color:$dark-gray;
   margin-bottom:rem(50);
+  text-shadow:0 1px white;
 
   @include media(min-width $large-screen) {
     font-size:rem(30);
@@ -149,16 +155,9 @@ h4 {
 h5 {
   @extend .serif-upper;
   color:$medium-gray;
-  font-size:rem(18);
-  line-height:rem(24);
-  margin-bottom:rem(25);
-}
-
-h5 {
-  color:$medium-gray;
   font-size:rem(16);
   line-height:rem(24);
-  margin-bottom:rem(25);
+  margin-bottom:rem(15);
 }
 
 p {
@@ -177,14 +176,14 @@ p {
 }
 
 a {
-  color: $action-color;
+  color: darken($action-color, 10%);
   text-decoration: none;
   transition: color $base-duration $base-timing;
 
   &:active,
   &:focus,
   &:hover {
-    color: shade($action-color, 25%);
+    color: shade($action-color, 45%);
   }
 }
 

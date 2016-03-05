@@ -19,12 +19,15 @@ $large-screen-up: new-breakpoint(min-width $large-screen 8);
 
 .row {
   @include row();
-  @include clearfix();
-  margin-bottom:rem(0);
+  //margin-bottom:rem(30);
 }
 
 .l-half, .l-third, .l-fourth, .l-fifth, .l-sixth {
   margin-bottom:rem(30);
+
+  &.no-bottom-margin {
+    margin-bottom:0;
+  }
 
 }
 .l-half {
@@ -60,6 +63,10 @@ $large-screen-up: new-breakpoint(min-width $large-screen 8);
     float:left;
     @include grid(((strip-unit($column) + strip-unit($gutter)) * ($grid-columns / 3) * 2) - strip_unit($gutter), strip_unit($max-width));
     @include mright(strip-unit($gutter), strip_unit($max-width));
+  }
+
+  & + .l-third {
+    margin-right:0;
   }
 }
 

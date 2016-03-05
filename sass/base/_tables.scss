@@ -1,6 +1,6 @@
 table {
   border-collapse: collapse;
-  margin: $small-spacing 0;
+  //margin: $small-spacing 0;
   table-layout: fixed;
   width: 100%;
 }
@@ -13,12 +13,17 @@ th {
 }
 
 td {
-  border-bottom: $base-border;
-  padding: $small-spacing 0;
+  //border-bottom: $base-border;
+  //padding: rem(10);
 }
 
 tr,
 td,
 th {
   vertical-align: middle;
+}
+
+.nostretch {
+  width:1%;
+  white-space: nowrap;
 }

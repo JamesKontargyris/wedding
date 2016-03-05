@@ -18,6 +18,7 @@
   white-space: nowrap;
   text-transform: uppercase;
   margin-bottom:$small-spacing;
+  text-align: center;
 
   & + .button {
     margin-left:rem(10);
@@ -31,8 +32,8 @@
   }
 
   &.button-secondary {
-    border:1px solid $medium-gray;
-    color: $action-color;
+    border:1px solid $light-gray;
+    color: darken($action-color, 10%);
     rect, path, polygon {
       fill:$action-color;
     }
@@ -42,21 +43,22 @@
     }
   }
 
+  &.button-small {
+    padding: rem(4);
+    font-size:rem(12);
+    display:inline-block;
+  }
+
+  &.no-bottom-margin {
+    margin-bottom:0;
+  }
+
   &:hover,
   &:focus {
     background: $secondary-color;
     color: #fff;
     rect, path, polygon {
       fill:#fff;
-    }
-  }
-
-  &:disabled {
-    cursor: not-allowed;
-    opacity: 0.5;
-
-    &:hover {
-      background-color: $action-color;
     }
   }
 }
@@ -72,5 +74,15 @@
       font-size:rem(21);
       line-height:em(24);
     }
+  }
+}
+
+#{all-buttons}[disabled="disabled"],
+.button[disabled="disabled"] {
+  cursor: not-allowed;
+  opacity: 0.5;
+
+  &:hover {
+    background-color: $action-color;
   }
 }

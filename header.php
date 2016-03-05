@@ -37,7 +37,7 @@
             <?php else : ?>
                 <a href="/rsvp" class="button button-primary smooth-scroll">RSVP</a>
             <?php endif; ?>
-            <a href="#" class="button button-secondary is-hidden-medium is-icon">
+            <a href="/contact-us" class="button button-secondary is-hidden-medium is-icon">
                 <img class="svg" src="<?php echo get_template_directory_uri(); ?>/img/envelope.svg" alt="Contact Us">
             </a>
         </section>

@@ -102,6 +102,12 @@ select {
 
 /* General form styles */
 .wpcf7-form {
+
+  .wpcf7-recaptcha {
+    margin-bottom:rem(14);
+  }
+
+
   @include media(min-width $large-screen) {
     text-align:center;
 

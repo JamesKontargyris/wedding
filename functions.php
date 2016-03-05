@@ -42,6 +42,9 @@ function wedding_setup() {
 	 */
 	add_theme_support( 'post-thumbnails' );
 
+    add_image_size( 'hotel-desktop', 640, 480, true );
+    add_image_size( 'hotel-mobile', 640, 320, true );
+
 	// This theme uses wp_nav_menu() in one location.
 	register_nav_menus( array(
 		'primary' => esc_html__( 'Primary', 'wedding' ),
@@ -183,4 +186,23 @@ function wpse_66026_theme_uri_shortcode( $attrs = array (), $content = '' )
         : get_template_directory_uri();
 
     return trailingslashit( $theme_uri );
+}
+
+// Grab all hotels
+function get_hotels()
+{
+    global $post;
+
+    $args = [
+        'post_type' => 'hotel',
+        'post_status' => 'publish',
+        'posts_per_page' => -1,
+        'orderby' => 'menu_order',
+    ];
+
+    $hotels = new WP_Query($args);
+
+    wp_reset_postdata();
+
+    return $hotels;
 }

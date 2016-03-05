@@ -135,14 +135,16 @@ get_header(); ?>
                     </div>
 
                 </div>
-                <p class="center no-bottom-margin"><a href="/important-info" class="button button-primary">Important Info</a></p>
+                <div class="row">
+                    <p class="center no-bottom-margin"><a href="/important-info" class="button button-primary">Important Info</a></p>
+                </div>
             </section><!--.itinerary-->
 
             <a name="rsvp"></a>
             <section id="rsvp" class="card rsvp">
                 <div class="card__content">
                     <h2>RSVP<div class="heading-bells"></div></h2>
-                    <h4>Whether you are able to join us in person or only in spirit, we kindly ask that you respond by 30 June 2016.</h4>
+                    <h4>Whether you are able to join us in person or only in spirit, we kindly ask that you respond by 10 June 2016.</h4>
                     <div class="rsvp__form">
                         <?php echo do_shortcode('[contact-form-7 id="6" title="RSVP Form"]'); ?>
                     </div>
