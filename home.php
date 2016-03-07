@@ -23,30 +23,51 @@ get_header(); ?>
                 <div class="home-hero__corner-bottom-left"><img class="svg" src="<?php echo get_template_directory_uri(); ?>/img/home-hero-corner.svg" alt=""></div>
                 <div class="home-hero__corner-bottom-right"><img class="svg" src="<?php echo get_template_directory_uri(); ?>/img/home-hero-corner.svg" alt=""></div>
 
-
-                <div class="home-hero__content-container">
-                    <div class="home-hero__artwork">
-                        <img class="home-hero__artwork__wedgwood artwork-1" src="<?php echo get_template_directory_uri(); ?>/img/home-hero-letters.svg" alt="<?php bloginfo( 'name' ); ?>">
-                        <img class="home-hero__artwork__wedgwood artwork-2" src="<?php echo get_template_directory_uri(); ?>/img/home-hero-silhouettes.svg" alt="<?php bloginfo( 'name' ); ?>">
-                        <img class="home-hero__artwork__wedgwood artwork-3" src="<?php echo get_template_directory_uri(); ?>/img/home-hero-pattern.svg" alt="<?php bloginfo( 'name' ); ?>">
-
-                        <img class="home-hero__artwork__silhouettes artwork-silhouettes" src="<?php echo get_template_directory_uri(); ?>/img/home-hero-small.svg" alt="<?php bloginfo( 'name' ); ?>">
-                    </div>
+                <div class="home-hero__content">
+                    <img class="svg home-hero__mobile-silhouettes" src="<?php echo get_template_directory_uri(); ?>/img/home-hero-small.svg" alt="<?php bloginfo( 'name' ); ?>">
                     <div class="home-hero__title">
                         <div class="home-hero__title__small-text">
                             The Marriage of
                         </div>
                         <div class="home-hero__title__large-text">
-                            <span class="home-hero__title__large-text__name">Hele</span>n <span class="home-hero__title__large-text__ampersand">&amp;</span> <span class="home-hero__title__large-text__name">James</span>
+                            <span class="home-hero__title__large-text__name">Hele</span>n <span class="home-hero__title__large-text__ampersand">&amp;</span> <span class="home-hero__title__large-text__name">Jame</span>s
+                        </div>
+                        <div class="home-hero__title__divider">
+                            <img src="<?php echo get_template_directory_uri(); ?>/img/heading-bells.svg" alt="---"
+                                 class="svg">
                         </div>
                         <div class="home-hero__title__medium-text">
                             Tenth of September <br class="is-hidden-small">Two Thousand and Sixteen
                         </div>
                     </div>
-                    <div class="home-hero__scroll-arrow bounce">
-                        <img src="<?php echo get_template_directory_uri(); ?>/img/down-arrow.svg" alt="Scroll Down" class="svg">
-                    </div>
                 </div>
+
+
+
+
+<!--                <div class="home-hero__content-container">-->
+<!--                    <div class="home-hero__artwork">-->
+<!--                        <img class="home-hero__artwork__wedgwood artwork-1" src="--><?php //echo get_template_directory_uri(); ?><!--/img/home-hero-letters.svg" alt="--><?php //bloginfo( 'name' ); ?><!--">-->
+<!--                        <img class="home-hero__artwork__wedgwood artwork-2" src="--><?php //echo get_template_directory_uri(); ?><!--/img/home-hero-silhouettes.svg" alt="--><?php //bloginfo( 'name' ); ?><!--">-->
+<!--                        <img class="home-hero__artwork__wedgwood artwork-3" src="--><?php //echo get_template_directory_uri(); ?><!--/img/home-hero-pattern.svg" alt="--><?php //bloginfo( 'name' ); ?><!--">-->
+<!---->
+<!--                        <img class="home-hero__artwork__silhouettes artwork-silhouettes" src="--><?php //echo get_template_directory_uri(); ?><!--/img/home-hero-small.svg" alt="--><?php //bloginfo( 'name' ); ?><!--">-->
+<!--                    </div>-->
+<!--                    <div class="home-hero__title">-->
+<!--                        <div class="home-hero__title__small-text">-->
+<!--                            The Marriage of-->
+<!--                        </div>-->
+<!--                        <div class="home-hero__title__large-text">-->
+<!--                            <span class="home-hero__title__large-text__name">Hele</span>n <span class="home-hero__title__large-text__ampersand">&amp;</span> <span class="home-hero__title__large-text__name">James</span>-->
+<!--                        </div>-->
+<!--                        <div class="home-hero__title__medium-text">-->
+<!--                            Tenth of September <br class="is-hidden-small">Two Thousand and Sixteen-->
+<!--                        </div>-->
+<!--                    </div>-->
+<!--                    <div class="home-hero__scroll-arrow bounce">-->
+<!--                        <img src="--><?php //echo get_template_directory_uri(); ?><!--/img/down-arrow.svg" alt="Scroll Down" class="svg">-->
+<!--                    </div>-->
+<!--                </div>-->
 			</section><!--.home-hero-->
 
             <section class="our-story card has-garland-top">
