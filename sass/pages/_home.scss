@@ -31,7 +31,7 @@
         fill: white;
       }
 
-      @include media(max-width $medium-screen orientation landscape) {
+      @include media(max-width $large-screen orientation landscape) {
          display:none;
        }
     }
