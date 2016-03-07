@@ -4,7 +4,7 @@
 <meta charset="<?php bloginfo( 'charset' ); ?>">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <link rel="profile" href="http://gmpg.org/xfn/11">
-<link href='https://fonts.googleapis.com/css?family=Cardo:400,400italic,700|Open+Sans:400,400italic,700,700italic' rel='stylesheet' type='text/css'>
+<link href='https://fonts.googleapis.com/css?family=Cardo:400,400italic,700,700italic|Open+Sans:400,400italic,700,700italic' rel='stylesheet' type='text/css'>
 <link rel="pingback" href="<?php bloginfo( 'pingback_url' ); ?>">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
 <?php wp_head(); ?>
@@ -33,9 +33,9 @@
         </section><!-- .site-header__logo -->
         <section class="site-header__header-links">
             <?php if(is_home()) : ?>
-                <a href="#rsvp" class="button button-primary smooth-scroll">RSVP</a>
+                <a href="#rsvp" class="button button-primary smooth-scroll no-bottom-margin">RSVP</a>
             <?php else : ?>
-                <a href="/rsvp" class="button button-primary smooth-scroll">RSVP</a>
+                <a href="/rsvp" class="button button-primary smooth-scroll no-bottom-margin">RSVP</a>
             <?php endif; ?>
             <a href="/contact-us" class="button button-secondary is-hidden-medium is-icon">
                 <img class="svg" src="<?php echo get_template_directory_uri(); ?>/img/envelope.svg" alt="Contact Us">

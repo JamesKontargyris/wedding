@@ -30,7 +30,7 @@ get_header(); ?>
                         <img class="home-hero__artwork__wedgwood artwork-2" src="<?php echo get_template_directory_uri(); ?>/img/home-hero-silhouettes.svg" alt="<?php bloginfo( 'name' ); ?>">
                         <img class="home-hero__artwork__wedgwood artwork-3" src="<?php echo get_template_directory_uri(); ?>/img/home-hero-pattern.svg" alt="<?php bloginfo( 'name' ); ?>">
 
-                        <img class="home-hero__artwork__silhouettes" src="<?php echo get_template_directory_uri(); ?>/img/home-hero-small.svg" alt="<?php bloginfo( 'name' ); ?>">
+                        <img class="home-hero__artwork__silhouettes artwork-silhouettes" src="<?php echo get_template_directory_uri(); ?>/img/home-hero-small.svg" alt="<?php bloginfo( 'name' ); ?>">
                     </div>
                     <div class="home-hero__title">
                         <div class="home-hero__title__small-text">

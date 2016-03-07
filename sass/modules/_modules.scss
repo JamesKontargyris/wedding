@@ -3,7 +3,7 @@
 
 
 .card {
-  padding: rem(25) rem(20);
+  padding: rem(40) rem(20);
   @include background(url('img/card-noise.png') top left repeat, linear-gradient(to top, #ebebeb 0, $base-background-color 50px), $base-background-color);
 
   &:not(:first-child) {
@@ -35,7 +35,7 @@
 
 .card-shallow {
   @extend .card;
-  padding: rem(25) rem(20);
+  padding: rem(35) rem(20);
 
   @include media($medium-screen) {
     padding:rem(45) rem(20);
@@ -56,9 +56,10 @@
   font-family:$heading-font-family;
   color:$secondary-color;
   font-size:rem(24);
-  line-height:rem(32);
+  line-height:rem(30);
   font-style:italic;
-  padding:rem(20) rem(20);
+  font-weight:700;
+  padding:rem(30) rem(20);
   margin:0;
 
   @include media(min-width $small-screen) {
@@ -70,6 +71,7 @@
   @include media(min-width $medium-screen) {
     font-size:rem(36);
     line-height:rem(42);
+    font-weight:300;
     padding:rem(60) rem(20);
   }
 }
@@ -109,7 +111,7 @@
         font-family: 'ParfumerieScriptText', 'Cardo', Georgia, serif;
         font-size:rem(70);
         line-height:1;
-        margin-top:rem(-35);
+        margin-top:rem(-30);
         margin-bottom:rem(15);
       }
     }

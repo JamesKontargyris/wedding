@@ -11,7 +11,7 @@
   text-align: center;
   line-height:1;
   color:#fff;
-  font-size: rem(24);
+  font-size: rem(18);
   text-shadow:0 -1px 0 darken($action-color, 20%);
   box-shadow: inset 0 2px 7px rgba(0,0,0,0.2);
 
@@ -36,6 +36,7 @@
 
   @include media(min-width $medium-screen) {
     padding:rem(110) rem(20);
+    font-size: rem(24);
 
     .countdown__timer .counter {
       margin-bottom:rem(50);
@@ -91,5 +92,11 @@
     font-size:em(10);
     color:lighten($medium-gray, 10%);
     text-transform: uppercase;
+  }
+
+  @include media(min-width $small-screen) {
+    .site-footer__contact-details {
+      font-size:em(16);
+    }
   }
 }

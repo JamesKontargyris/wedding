@@ -24,8 +24,8 @@ $light-gray: #d6d6d6;
 
 // Font Colors
 $base-font-color: $dark-gray;
-$action-color: $duck-egg;
-$secondary-color: $pink;
+$action-color: darken($duck-egg, 6%);
+$secondary-color: desaturate(darken($pink, 6%), 20%);
 
 // Border
 $base-border-color: $medium-gray;

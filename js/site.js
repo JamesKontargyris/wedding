@@ -52,28 +52,29 @@
     });
 
     /* Homepage fade-in of hero elements */
-    if($( window ).width() > 570) {
+    $('.home-hero__title__small-text, .home-hero__title__medium-text, .home-hero__title__large-text, .home-hero__scroll-arrow').css('opacity', '0');
+    if($( window ).width() > 610) {
 
-        $('.home-hero__title__small-text, .home-hero__title__medium-text, .home-hero__title__large-text, .home-hero__artwork__wedgwood, .home-hero__scroll-arrow').css('opacity', '0');
-        $('.artwork-1').delay(150).animate({opacity:1}, 1000, function()
+        $('.home-hero__artwork__wedgwood').css('opacity', '0');
+        $('.artwork-1').delay(100).animate({opacity:1}, 1000, function()
         {
-            $('.artwork-2').delay(300).animate({opacity:1}, 1000, function()
+            $('.artwork-2').delay(100).animate({opacity:1}, 1000, function()
             {
-                $('.artwork-3').delay(100).animate({opacity:1}, 1000);
-            })
-
-            $('.home-hero__title__small-text').delay(2200).animate({opacity:1}, 1000, function()
-            {
-                $('.home-hero__title__large-text').animate({opacity:1}, 1000, function()
-                {
-                    $('.home-hero__title__medium-text').delay(500).animate({opacity:1}, 1000, function() {
-                        $('.home-hero__scroll-arrow').delay(2000).animate({opacity:1}, 1000);
-                    });
-                });
+                $('.artwork-3').delay(100).animate({opacity:1}, 1500);
             });
         });
-
+    } else {
+        $('.home-hero__artwork__silhouettes').css('opacity', '0').delay(150).animate({opacity:1}, 1000);
     }
+    $('.home-hero__title__small-text').delay(2500).animate({opacity:1}, 1000, function()
+    {
+        $('.home-hero__title__large-text').animate({opacity:1}, 1000, function()
+        {
+            $('.home-hero__title__medium-text').delay(500).animate({opacity:1}, 1000, function() {
+                $('.home-hero__scroll-arrow').delay(500).animate({opacity:1}, 1000);
+            });
+        });
+    });
 
     /* Footer countdown */
     var weddingDate = '2016/09/10';
