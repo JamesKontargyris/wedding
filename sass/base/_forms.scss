@@ -44,6 +44,7 @@ select[multiple] {
     opacity:1;
     color:lighten($medium-gray, 15%);
     overflow: auto;
+    font-size:rem(14);
   }
 
   &:hover {
@@ -62,6 +63,12 @@ select[multiple] {
 
     &:hover {
       border: $base-border;
+    }
+  }
+
+  @include media(min-width $medium-screen) {
+    &::placeholder {
+      font-size:rem(16);
     }
   }
 
