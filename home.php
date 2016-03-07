@@ -40,34 +40,10 @@ get_header(); ?>
                             Tenth of September <br class="is-hidden-small">Two Thousand and Sixteen
                         </div>
                     </div>
+                    <div class="home-hero__scroll-arrow bounce">
+                        <img src="<?php echo get_template_directory_uri(); ?>/img/down-arrow.svg" alt="Scroll Down" class="svg">
+                    </div>
                 </div>
-
-
-
-
-<!--                <div class="home-hero__content-container">-->
-<!--                    <div class="home-hero__artwork">-->
-<!--                        <img class="home-hero__artwork__wedgwood artwork-1" src="--><?php //echo get_template_directory_uri(); ?><!--/img/home-hero-letters.svg" alt="--><?php //bloginfo( 'name' ); ?><!--">-->
-<!--                        <img class="home-hero__artwork__wedgwood artwork-2" src="--><?php //echo get_template_directory_uri(); ?><!--/img/home-hero-silhouettes.svg" alt="--><?php //bloginfo( 'name' ); ?><!--">-->
-<!--                        <img class="home-hero__artwork__wedgwood artwork-3" src="--><?php //echo get_template_directory_uri(); ?><!--/img/home-hero-pattern.svg" alt="--><?php //bloginfo( 'name' ); ?><!--">-->
-<!---->
-<!--                        <img class="home-hero__artwork__silhouettes artwork-silhouettes" src="--><?php //echo get_template_directory_uri(); ?><!--/img/home-hero-small.svg" alt="--><?php //bloginfo( 'name' ); ?><!--">-->
-<!--                    </div>-->
-<!--                    <div class="home-hero__title">-->
-<!--                        <div class="home-hero__title__small-text">-->
-<!--                            The Marriage of-->
-<!--                        </div>-->
-<!--                        <div class="home-hero__title__large-text">-->
-<!--                            <span class="home-hero__title__large-text__name">Hele</span>n <span class="home-hero__title__large-text__ampersand">&amp;</span> <span class="home-hero__title__large-text__name">James</span>-->
-<!--                        </div>-->
-<!--                        <div class="home-hero__title__medium-text">-->
-<!--                            Tenth of September <br class="is-hidden-small">Two Thousand and Sixteen-->
-<!--                        </div>-->
-<!--                    </div>-->
-<!--                    <div class="home-hero__scroll-arrow bounce">-->
-<!--                        <img src="--><?php //echo get_template_directory_uri(); ?><!--/img/down-arrow.svg" alt="Scroll Down" class="svg">-->
-<!--                    </div>-->
-<!--                </div>-->
 			</section><!--.home-hero-->
 
             <section class="our-story card has-garland-top">

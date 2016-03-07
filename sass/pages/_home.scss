@@ -6,7 +6,7 @@
   justify-items:center;
   align-items:center;
   align-content:center;
-  @include background(url('img/card-noise.png') top left repeat, radial-gradient(#9ac8d9 40%, #77a2b2 90%) center no-repeat);
+  @include background(url('img/card-noise.png') top left repeat, radial-gradient(lighten($action-color, 11%) 20%, $action-color 90%) center no-repeat);
   height:calc(100vh - 80px);
 
   .home-hero__content {
@@ -48,6 +48,7 @@
         color:white;
         line-height:1.3;
         text-transform:uppercase;
+        text-shadow:0 -1px rgba(0,0,0,0.1);
       }
       .home-hero__title__small-text {
         font-size:rem(12);
@@ -80,6 +81,16 @@
             fill:white;
           }
         }
+      }
+    }
+
+    .home-hero__scroll-arrow {
+      position:absolute;
+      bottom:0;
+      left:50%;
+      svg {
+        width:rem(24);
+        margin-left:rem(-12);
       }
     }
   }
@@ -141,7 +152,7 @@
   }
 
   @include media(min-width $large-screen) {
-    padding: rem(40);
+    padding: rem(60);
 
     .home-hero__content {
       @include background(url(img/home-hero-silhouettes.svg) center no-repeat, url(img/home-hero-pattern.svg) center no-repeat);
@@ -345,16 +356,6 @@
 //        padding-top:40px;
 //      }
 //
-//    }
-//  }
-
-//  .home-hero__scroll-arrow {
-//    position:absolute;
-//    bottom:0;
-//    left:50%;
-//    svg {
-//      width:rem(24);
-//      margin-left:rem(-12);
 //    }
 //  }
 //

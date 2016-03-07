@@ -101,7 +101,7 @@
 
       }
       .itinerary__event__title__cursive {
-        font-family: 'ParfumerieScriptText', 'Cardo', Georgia, serif;
+        font-family: $cursive-font-family;
         font-size:rem(70);
         line-height:1;
         margin-top:rem(-25);
