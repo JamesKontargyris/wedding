@@ -38,6 +38,12 @@
     }
   }
 
+  @include media(max-width $large-screen landscape) {
+    .l-page__header {
+      padding:rem(40) rem(20);
+    }
+  }
+
 }
 
 hr {

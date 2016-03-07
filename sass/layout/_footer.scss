@@ -12,7 +12,7 @@
   line-height:1;
   color:#fff;
   font-size: rem(18);
-  text-shadow:0 -1px 0 darken($action-color, 20%);
+  text-shadow:0 -1px 0 darken($action-color, 10%);
   box-shadow: inset 0 2px 7px rgba(0,0,0,0.2);
 
   .countdown__timer {

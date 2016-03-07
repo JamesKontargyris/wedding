@@ -183,7 +183,7 @@
       opacity:0.01;
 
       img {
-        width:150px;
+        width:160px;
         max-width:100%;
       }
 
@@ -208,15 +208,17 @@
   }
 
   @include media(min-width $medium-screen) {
-    .photos-row__photo {
-      display:block !important;
+    .our-story__photos {
+      .photos-row__photo {
+        display:block !important;
 
-      &:not(:last-child) {
-        margin-right:rem(40);
-      }
+        &:not(:last-child) {
+          margin-right:rem(40);
+        }
 
-      img {
-        width:200px;
+        img {
+          width:200px;
+        }
       }
     }
 
