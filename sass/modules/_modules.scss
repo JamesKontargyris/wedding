@@ -156,10 +156,10 @@
 
 .circle-icon {
   display:none;
-  @include media(min-width $small-screen) {
+  @include media(min-width $xsmall-screen) {
     display:block;
-    width:rem(64);
-    height:rem(64);
+    width:rem(48);
+    height:rem(48);
     padding:rem(12);
     border-radius:50%;
     border:2px dotted $light-gray;
@@ -168,6 +168,10 @@
     svg {
       fill:$secondary-color;
     }
+  }
+  @include media(min-width $medium-screen) {
+    width:rem(64);
+    height:rem(64);
   }
 }
 

@@ -52,10 +52,10 @@
     });
 
     /* Homepage fade-in of hero elements */
-    $('.home-hero__title__small-text, .home-hero__title__medium-text, .home-hero__title__large-text, .home-hero__scroll-arrow').css('opacity', '0');
+    $('.home-hero__title__small-text, .home-hero__title__medium-text, .home-hero__title__large-text, .home-hero__scroll-arrow, .home-hero__artwork__silhouettes, .home-hero__artwork__wedgwood').css('opacity', '0');
     if($( window ).width() > 610) {
 
-        $('.home-hero__artwork__wedgwood').css('opacity', '0');
+        //$('.home-hero__artwork__wedgwood').css('opacity', '0');
         $('.artwork-1').delay(100).animate({opacity:1}, 1000, function()
         {
             $('.artwork-2').delay(100).animate({opacity:1}, 1000, function()
@@ -64,7 +64,7 @@
             });
         });
     } else {
-        $('.home-hero__artwork__silhouettes').css('opacity', '0').delay(150).animate({opacity:1}, 1000);
+        $('.home-hero__artwork__silhouettes').delay(150).animate({opacity:1}, 1500);
     }
     $('.home-hero__title__small-text').delay(2500).animate({opacity:1}, 1000, function()
     {
