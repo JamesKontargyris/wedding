@@ -1,6 +1,7 @@
 .home-hero {
   position:relative;
-  display:flex;
+  display:none; // So effect is revealed with jQuery
+  //display:flex;
   flex-direction: row;
   justify-content:center;
   justify-items:center;
@@ -199,168 +200,6 @@
   }
 }
 
-//.home-hero {
-//  position:relative;
-//  display:flex;
-//  flex-direction: row;
-//  justify-content: center;
-//  align-items:center;
-//  box-shadow: 0 2px 7px rgba(0,0,0,0.2);
-//  height:calc(100vh - 80px);
-//  z-index:50;
-//  @include background(url('img/card-noise.png') top left repeat, radial-gradient(#9ac8d9 40%, #77a2b2 90%) center no-repeat);
-//
-//  .home-hero__corner-top-left,
-//  .home-hero__corner-top-right,
-//  .home-hero__corner-bottom-left,
-//  .home-hero__corner-bottom-right {
-//    position:absolute;
-//    .svg {
-//      width:60px;
-//      fill: white;
-//      @include media(max-width $large-screen) { width: 40px; }
-//    }
-//    @include media(max-width $xsmall-screen) { display:none; }
-//  }
-//  .home-hero__corner-top-left {
-//    top:20px; left:20px;
-//    @include media(max-width $large-screen) { top:10px; left:10px; }
-//  }
-//  .home-hero__corner-top-right {
-//    top:20px; right:20px;
-//    transform:rotate(90deg);
-//    @include media(max-width $large-screen) { top:10px; right:10px; }
-//  }
-//  .home-hero__corner-bottom-left {
-//    bottom:20px; left:20px;
-//    transform:rotate(270deg);
-//    @include media(max-width $large-screen) { bottom:10px; left:10px; }
-//  }
-//  .home-hero__corner-bottom-right {
-//    bottom:20px; right:20px;
-//    transform:rotate(180deg);
-//    @include media(max-width $large-screen) { bottom:10px; right:10px; }
-//  }
-//
-//  .home-hero__content-container {
-//    display:flex;
-//    flex-direction: column;
-//    align-content:center;
-//    align-items:center;
-//
-//    .home-hero__artwork {
-//      position:relative;
-//      width:100%;
-//      height:100%;
-//
-//      @include media(orientation landscape max-width 1100px) { display: none; }
-//
-//      .home-hero__artwork__wedgwood {
-//        position:absolute;
-//        top:0;
-//        left:10px;
-//        height:100%;
-//        width:100%;
-//        max-height:800px;
-//        padding:0 rem(20);
-//
-//        &:first-child { position:relative; }
-//
-//        @include media (max-width $xlarge-screen) { max-height:460px; }
-//        @include media(min-width $small-screen max-width $medium-screen orientation portrait) { display: block; }
-//        @include media(max-width $medium-screen) { display: none; }
-//        @include media(max-width $large-screen orientation landscape) { max-height:300px; }
-//      }
-//
-//      .home-hero__artwork__silhouettes {
-//        height:100%;
-//        max-height:130px;
-//        padding:0 rem(20);
-//
-//        @include media(min-width $medium-screen) { display: none; }
-//        @include media(min-width $small-screen max-width $medium-screen orientation portrait) { display: none; }
-//      }
-//
-//    }
-//
-//    .home-hero__title {
-//      width:100%;
-//      text-align:center;
-//      padding:rem(40) rem(20) 0 rem(20);
-//      text-shadow:0 -1px rgba(0,0,0,0.15);
-//
-//      .home-hero__title__small-text,
-//      .home-hero__title__medium-text,
-//      .home-hero__title__large-text {
-//        font-family: $heading-font-family;
-//        font-weight:600;
-//        color:white;
-//        line-height:1.5;
-//        text-transform:uppercase;
-//      }
-//      .home-hero__title__small-text {
-//        font-size:em(14);
-//        letter-spacing:10px;
-//        margin-bottom:5px;
-//      }
-//      .home-hero__title__medium-text {
-//        font-size:em(16);
-//        letter-spacing:10px;
-//      }
-//      .home-hero__title__large-text {
-//        font-size:em(40);
-//        line-height:1.1;
-//        margin-bottom:20px;
-//        .home-hero__title__large-text__name {
-//          letter-spacing: 20px;
-//
-//          @include media(max-width $small-screen) {
-//            letter-spacing: 5px;
-//          }
-//        }
-//        .home-hero__title__large-text__ampersand {
-//          font-style: italic;
-//          font-weight:400;
-//          font-size:0.6em;
-//        }
-//
-//      }
-//
-//      @include media(max-width $medium-screen) { // .home-hero__title
-//
-//        .home-hero__title__small-text,
-//        .home-hero__title__medium-text,
-//        .home-hero__title__large-text,
-//        .home-hero__title__large-text__name {
-//          letter-spacing: 3px;
-//        }
-//        .home-hero__title__small-text {
-//          margin-bottom:5px;
-//        }
-//        .home-hero__title__large-text {
-//          font-size:rem(32);
-//          margin-bottom:8px;
-//        }
-//        .home-hero__title__medium-text {
-//          font-size:rem(14);
-//        }
-//      }
-//
-//      @include media(max-width $xlarge-screen) { // .home-hero__title
-//        padding-top:20px;
-//      }
-//      @include media(max-width $medium-screen) { // .home-hero__title
-//        padding-top:10px;
-//      }
-//      @include media(min-width $medium-screen orientation portrait) { // .home-hero__title
-//        padding-top:40px;
-//      }
-//
-//    }
-//  }
-//
-//}
-
 .our-story {
   .our-story__stories {
     @include row();
@@ -374,7 +213,7 @@
       opacity:0.01;
 
       img {
-        width:160px;
+        width:200px;
         max-width:100%;
       }
 
@@ -405,10 +244,6 @@
 
         &:not(:last-child) {
           margin-right:rem(40);
-        }
-
-        img {
-          width:200px;
         }
       }
     }

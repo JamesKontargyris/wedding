@@ -52,9 +52,10 @@
     });
 
     /* Homepage fade-in of hero elements */
+    $('.home-hero').css('display', 'flex');
     $('.home-hero__content, .home-hero__title__divider, .home-hero__title__small-text, .home-hero__title__medium-text, .home-hero__title__large-text, .home-hero__scroll-arrow, .home-hero__mobile-silhouettes').css('opacity', '0');
 
-    $('.home-hero__content').delay(150).animate({opacity:1}, 1500, function()
+    $('.home-hero__content').delay(300).animate({opacity:1}, 1500, function()
     {
         $('.home-hero__title__small-text').animate({opacity:1}, 1000, function()
         {
