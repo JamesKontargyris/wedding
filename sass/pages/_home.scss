@@ -195,7 +195,7 @@
 
   .our-story__stories__helen,
   .our-story__stories__james {
-    svg {
+    svg, img {
       height:rem(60);
       rect, path {
         fill:$action-color;
@@ -240,10 +240,12 @@
   }
 
   @include media(min-width $large-screen) {
-    .our-story__stories__helen,
-    .our-story__stories__james {
-      svg {
-        height:rem(110);
+    .our-story__stories {
+      .our-story__stories__helen,
+      .our-story__stories__james {
+        svg, img {
+          height:rem(110);
+        }
       }
     }
   }
