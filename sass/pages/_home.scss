@@ -31,8 +31,8 @@
       }
 
       @include media(max-width $medium-screen orientation landscape) {
-        display:none;
-      }
+         display:none;
+       }
     }
 
     .home-hero__title {
@@ -141,13 +141,17 @@
   }
 
   @include media(min-width $medium-screen) {
-    padding:rem(40);
 
     .home-hero__content {
+      padding: rem(40);
       @include background(url(img/home-hero-silhouettes.svg) center no-repeat, url(img/home-hero-pattern.svg) center no-repeat);
       padding:0 25%;
       .home-hero__mobile-silhouettes {
         display:none;
+      }
+      @include media(orientation landscape) {
+        @include background(url(img/home-hero-pattern.svg) center no-repeat);
+        background-size:cover;
       }
     }
   }
