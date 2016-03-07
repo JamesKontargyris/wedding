@@ -10,10 +10,7 @@
     align-content:center;
     justify-content:center;
     padding:rem(40) rem(20);
-    background:
-            url('img/card-noise.png') top left repeat,
-            url('img/page-header-bg.svg') center no-repeat,
-            $action-color;
+    @extend .blue-bg-with-pattern;
     background-size: auto, cover;
     background-origin: padding-box;
     box-shadow: inset 0 -2px 5px rgba(0,0,0,0.2);

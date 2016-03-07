@@ -17,7 +17,7 @@ $small-spacing: $base-spacing / 2;
 $base-z-index: 0;
 
 // Colors
-$duck-egg: #9ac8d9;
+$duck-egg: #a3d1d9;
 $pink: #f59aab;
 $dark-gray: #333;
 $medium-gray: #8a8a8a;
@@ -25,7 +25,7 @@ $light-gray: #d6d6d6;
 
 // Font Colors
 $base-font-color: $dark-gray;
-$action-color: darken($duck-egg, 6%);
+$action-color: $duck-egg;
 $secondary-color: desaturate(darken($pink, 6%), 20%);
 
 // Border

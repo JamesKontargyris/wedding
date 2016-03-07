@@ -207,3 +207,10 @@ function get_hotels()
 
     return $hotels;
 }
+
+// Stop TinyMCE deleting empty DIVs
+function change_mce_options( $init ) {
+	$init['extended_valid_elements'] = 'div[*]';
+	return $init;
+}
+add_filter('tiny_mce_before_init', 'change_mce_options');

@@ -9,10 +9,11 @@
   &:not(:first-child) {
     box-shadow: inset 0 2px 7px rgba(0,0,0,0.2);
   }
+
   &.has-garland-top {
-    padding: rem(90) rem(20);
-    @include background(url('img/card-noise.png') top left repeat, url('img/garland_light.svg') center 6px repeat-x, $base-background-color);
-    background-size: auto, 90px 40px, auto;
+    padding: rem(70) rem(20);
+    @include background(url('img/card-noise.png') top left repeat, url('img/garland_light.svg') center 0px repeat-x, $base-background-color);
+    background-size: auto, 60px 40px, auto;
   }
   .card__content {
     @include outer-container();
@@ -22,8 +23,14 @@
     padding: rem(45) rem(20);
   }
 
-  @include media(min-width $large-screen) {
+  @include media(min-width $medium-screen) {
     padding: rem(90) rem(20);
+
+    &.has-garland-top {
+      padding: rem(90) rem(20);
+      @include background(url('img/card-noise.png') top left repeat, url('img/garland_light.svg') center 6px repeat-x, $base-background-color);
+      background-size: auto, 90px 40px, auto;
+    }
   }
 }
 
@@ -49,15 +56,13 @@
 .pull-quote {
   font-family:$heading-font-family;
   color:$secondary-color;
-  font-size:rem(24);
-  line-height:rem(30);
+  font-size:rem(28);
+  line-height:rem(32);
   font-style:italic;
   padding:rem(30) rem(20);
   margin:0;
 
   @include media(min-width $small-screen) {
-    font-size:rem(28);
-    line-height:rem(36);
     padding:rem(40) rem(20) rem(60);
   }
 
@@ -88,7 +93,7 @@
 
   .itinerary__event {
     text-align: center;
-    margin-bottom:rem(50);
+    margin-bottom:rem(30);
 
     .itinerary__event__title {
       color:$secondary-color;
@@ -104,8 +109,8 @@
         font-family: $cursive-font-family;
         font-size:rem(70);
         line-height:1;
-        margin-top:rem(-25);
-        margin-bottom:rem(15);
+        margin-top:rem(-30);
+        margin-bottom:rem(10);
       }
     }
 
@@ -124,18 +129,22 @@
     }
   }
 
-  @include media(min-width $large-screen) {
+  @include media(min-width $small-screen) {
     .itinerary__event {
-      @include span-columns(2 of 6);
-
       .itinerary__event__title .itinerary__event__title__cursive {
-        font-size:rem(80);
+        font-size:rem(90);
         margin-top:rem(-40);
       }
 
       .itinerary__event__details span {
         font-size:rem(24);
       }
+    }
+  }
+
+  @include media(min-width $large-screen) {
+    .itinerary__event {
+      @include span-columns(2 of 6);
     }
   }
 
@@ -157,9 +166,9 @@
   display:none;
   @include media(min-width $xsmall-screen) {
     display:block;
-    width:rem(48);
-    height:rem(48);
-    padding:rem(12);
+    width:rem(54);
+    height:rem(54);
+    padding:rem(10);
     border-radius:50%;
     border:2px dotted $light-gray;
     margin:0 auto rem(20);

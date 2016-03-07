@@ -7,8 +7,8 @@
   justify-items:center;
   align-items:center;
   align-content:center;
-  @include background(url('img/card-noise.png') top left repeat, radial-gradient(lighten($action-color, 11%) 20%, $action-color 90%) center no-repeat);
   height:calc(100vh - 80px);
+  @extend .blue-bg;
 
   .home-hero__content {
     display:flex;
@@ -19,8 +19,8 @@
     align-content:center;
     height:100%;
     width:100%;
-    @include background(url(img/home-hero-pattern.svg) center no-repeat);
-    background-size:200%;
+    @include background(url('img/card-noise.png') top left repeat, url(img/home-hero-pattern.svg) center no-repeat);
+    background-size:auto, 200%;
     text-align:center;
 
     .home-hero__mobile-silhouettes {
@@ -146,29 +146,14 @@
           font-size:rem(14);
         }
         .home-hero__title__medium-text {
-          font-size:rem(16);
+          font-size:rem(14);
         }
       }
     }
   }
 
   @include media(min-width $large-screen) {
-    padding: rem(60);
-
-    .home-hero__content {
-      @include background(url(img/home-hero-silhouettes.svg) center no-repeat, url(img/home-hero-pattern.svg) center no-repeat);
-      padding:0 25%;
-      .home-hero__mobile-silhouettes {
-        display:none;
-      }
-      @include media(max-width $medium-screen orientation landscape) {
-        @include background(url(img/home-hero-pattern.svg) center no-repeat);
-        background-size:cover;
-      }
-    }
-  }
-
-  @include media(min-width $large-screen) {
+    padding: rem(50) rem(100);
 
     .home-hero__corner-top-left,
     .home-hero__corner-top-right,
@@ -180,14 +165,26 @@
     .home-hero__content {
       padding:0 220px;
 
+      @include background(url('img/card-noise.png') top left repeat, url(img/home-hero-silhouettes.svg) center no-repeat, url(img/home-hero-pattern.svg) center no-repeat);
+      padding:0 25%;
+
+      .home-hero__mobile-silhouettes {
+        display:none;
+      }
+
+      @include media(max-width $medium-screen orientation landscape) {
+        @include background(url('img/card-noise.png') top left repeat, url(img/home-hero-pattern.svg) center no-repeat);
+        background-size:auto, cover;
+      }
+
       .home-hero__title {
         .home-hero__title__small-text {
-          letter-spacing:8px;
+          letter-spacing:6px;
           margin-bottom:rem(15);
         }
 
         .home-hero__title__large-text {
-          font-size:rem(50);
+          font-size:rem(44);
           .home-hero__title__large-text__name {
             letter-spacing: 20px;
           }
@@ -198,6 +195,7 @@
       }
     }
   }
+
 }
 
 .our-story {

@@ -2,12 +2,7 @@
   @extend .serif-upper;
   letter-spacing:rem(8);
   padding:rem(70) rem(20);
-  background:
-          url('img/card-noise.png') top left repeat,
-          url('img/garland.svg') center 1% repeat-x,
-          url('img/garland_180.svg') center 99% repeat-x,
-          $action-color;
-  background-size: auto, 90px 40px, 90px 40px;
+  @extend .blue-bg-with-garlands;
   text-align: center;
   line-height:1;
   color:#fff;
