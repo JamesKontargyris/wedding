@@ -18,7 +18,6 @@
     align-content:center;
     height:100%;
     width:100%;
-    max-width:900px;
     @include background(url(img/home-hero-pattern.svg) center no-repeat);
     background-size:200%;
     text-align:center;
@@ -90,6 +89,7 @@
   .home-hero__corner-bottom-left,
   .home-hero__corner-bottom-right {
     position:absolute;
+    display:none;
     .svg {
       width:60px;
       fill: white;
@@ -137,15 +137,13 @@
           font-size:rem(16);
         }
       }
-
     }
-
   }
 
-  @include media(min-width $medium-screen) {
+  @include media(min-width $large-screen) {
+    padding: rem(40);
 
     .home-hero__content {
-      margin: rem(40);
       @include background(url(img/home-hero-silhouettes.svg) center no-repeat, url(img/home-hero-pattern.svg) center no-repeat);
       padding:0 25%;
       .home-hero__mobile-silhouettes {
@@ -159,6 +157,14 @@
   }
 
   @include media(min-width $large-screen) {
+
+    .home-hero__corner-top-left,
+    .home-hero__corner-top-right,
+    .home-hero__corner-bottom-left,
+    .home-hero__corner-bottom-right {
+      display:block;
+    }
+
     .home-hero__content {
       padding:0 220px;
 
