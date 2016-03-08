@@ -28,6 +28,7 @@
       height:auto;
       max-width:300px;
       padding:rem(20) rem(40);
+      height:auto;
       path, rect {
         fill: white;
       }
@@ -153,7 +154,7 @@
   }
 
   @include media(min-width $large-screen) {
-    padding: rem(50) rem(100);
+    padding: rem(70) rem(100);
 
     .home-hero__corner-top-left,
     .home-hero__corner-top-right,
@@ -163,7 +164,7 @@
     }
 
     .home-hero__content {
-      padding:0 220px;
+      padding:0 rem(220);
 
       @include background(url('img/card-noise.png') top left repeat, url(img/home-hero-silhouettes.svg) center no-repeat, url(img/home-hero-pattern.svg) center no-repeat);
       padding:0 25%;

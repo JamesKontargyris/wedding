@@ -26,14 +26,14 @@
 }
 
 .blue-bg {
-  @include background(url('img/card-noise.png') top left repeat, radial-gradient($action-color 0%, darken($action-color,13%) 60%) center no-repeat);
+  @include background(url('img/card-noise.png') top left repeat, radial-gradient($action-color 20%, darken($action-color,7%) 60%) center no-repeat);
 }
 
 .blue-bg-with-pattern {
   background:
           url('img/card-noise.png') top left repeat,
           url('img/page-header-bg.svg') center no-repeat,
-          radial-gradient($action-color 0%, darken($action-color,13%) 60%) center no-repeat;
+          radial-gradient($action-color 20%, darken($action-color,7%) 60%) center no-repeat;
 }
 
 .blue-bg-with-garlands {
@@ -41,7 +41,7 @@
         url('img/card-noise.png') top left repeat,
         url('img/garland.svg') center 0 repeat-x,
         url('img/garland_180.svg') center 100% repeat-x,
-        radial-gradient($action-color 0%, darken($action-color,13%) 100%) center no-repeat;
+        radial-gradient($action-color 20%, darken($action-color,7%) 60%) center no-repeat;
   background-size:auto, 60px 40px, 60px 40px, auto;
 
   @include media(min-width 610px) {
@@ -49,7 +49,7 @@
             url('img/card-noise.png') top left repeat,
             url('img/garland.svg') center 1% repeat-x,
             url('img/garland_180.svg') center 99% repeat-x,
-            radial-gradient($action-color 0%, darken($action-color,13%) 100%) center no-repeat;
+            radial-gradient($action-color 20%, darken($action-color,7%) 60%) center no-repeat;
     background-size:auto, 90px 40px, 90px 40px, auto;
   }
 }
