@@ -1,2 +1,15 @@
 @import 'home';
-@import 'venue';
+
+.venue {
+  .l-page__banner {
+    @include background(url(img/dentonhall.jpg) right center no-repeat);
+    background-size:cover;
+  }
+}
+
+.ilkley {
+  .l-page__banner {
+    @include background(url(img/ilkley-moor.jpg) left center no-repeat);
+    background-size:cover;
+  }
+}

@@ -100,7 +100,7 @@
 
       .itinerary__event__title__serif {
         @extend .serif-upper;
-        display:block;
+        display:none;
         font-size:rem(16);
         line-height:rem(18);
 
@@ -142,9 +142,27 @@
     }
   }
 
+  @include media(min-width $medium-screen) {
+    .itinerary__event {
+      .itinerary__event__title .itinerary__event__title__cursive {
+        margin-top:rem(-45);
+      }
+
+      .itinerary__event__details span {
+        font-size:rem(24);
+      }
+    }
+  }
+
   @include media(min-width $large-screen) {
     .itinerary__event {
       @include span-columns(2 of 6);
+
+      .itinerary__event__title {
+        .itinerary__event__title__serif {
+          display:block;
+        }
+      }
     }
   }
 
@@ -152,11 +170,26 @@
     .itinerary__event {
       .itinerary__event__title .itinerary__event__title__cursive {
         font-size:rem(110);
-        margin-top:rem(-55);
+        margin-top:rem(-57);
       }
 
       .itinerary__event__icon {
         margin-bottom:rem(30);
+      }
+    }
+  }
+
+  // target Firefox, which screws up the position of the cursive text
+  // (so hide the serif text to compensate)
+  @-moz-document url-prefix() {
+    .itinerary__event {
+      .itinerary__event__title {
+        .itinerary__event__title__serif {
+          display:none;
+        }
+        .itinerary__event__title__cursive {
+          margin-top:rem(-36);
+        }
       }
     }
   }
@@ -180,6 +213,10 @@
   @include media(min-width $medium-screen) {
     width:rem(64);
     height:rem(64);
+  }
+  //Target FireFox, which screws up the dotted outline
+  @-moz-document url-prefix() {
+    border-radius:10%;
   }
 }
 
