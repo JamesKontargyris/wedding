@@ -54,20 +54,20 @@ get_header(); ?>
                         <li class="photos-row__photo"><img class="is-circular" src="<?php echo get_template_directory_uri(); ?>/img/proposal-photo-3.jpg" alt="Proposal Photo 3"></li>
                     </ul>
                     <p class="our-story__pull-quote pull-quote-narrow is-centered-text">
-                        "After 10 years together, it was about time I asked Helen to marry me. So where better to propose than Times Square?"
+                        "Magic can happen when you least expect it."
                     </p>
                     <div class="our-story__stories">
                         <div class="our-story__stories__helen is-centered-text">
                             <img class="svg" src="<?php echo get_template_directory_uri(); ?>/img/silhouette-helen.svg" alt="Helen Silhouette">
                             <h5>Helen</h5>
-                            <p><em>"'Magic can happen when you least expect it'. New York was the perfect place for the next chapter to begin. After James surprised me with dinner and a show on Broadway on a rainy Summer's evening, I thought it couldn't get much better. He had been acting a little strange all day - it all fell into place when at around midnight he got down on one knee and proposed! We celebrated with cocktails overlooking Times Square - certainly a night I'll never forget.</em></p>
-                            <p><em>"I can't believe where the last 10 and a half years have gone, from the Rat and Emu student bar in Dartington, Devon where it all began to our little haven in Hebden Bridge - it's been an adventure! ”</em></p>
+                            <p><em>"New York was the perfect place for the next chapter to begin. After James surprised me with dinner and a show on Broadway on a rainy Summer's evening, I thought it couldn't get much better. He had been acting a little strange all day - it all fell into place when at around midnight he got down on one knee and proposed! We celebrated with cocktails overlooking Times Square - certainly a night I'll never forget.</em></p>
+                            <p><em>"I can't believe where the last 10 and a half years have gone, from the Rat and Emu student bar in Dartington, Devon where it all began to our little haven in Hebden Bridge - it's been an adventure!"</em></p>
                         </div>
                         <div class="our-story__stories__james is-centered-text">
                             <img class="svg" src="<?php echo get_template_directory_uri(); ?>/img/silhouette-james.svg" alt="James Silhouette">
                             <h5>James</h5>
-                            <p><em>“We got the chance to visit New York - one of our favourite cities - last summer. I knew it would be the perfect place to propose. I made plans in the few months before we left: I found a spot in Times Square on Google Street View; I ran it past the in-laws-to-be; I found a glittery (temporary) ring that would look great in Facebook photos (we took a trip to Tiffany's on 5th Avenue for the real thing)."</em></p>
-                            <p><em>"On the evening of 27 July 2015, after surprising Helen with a Broadway show (and in a British-level downpour), I asked some unsuspecting Canadian tourists to take a photo of us, got down on one soggy knee and popped the question.”</em></p>
+                            <p><em>"We got the chance to visit New York - one of our favourite cities - last summer. I knew it would be the perfect place to propose. I made plans in the few months before we left: I found a spot in Times Square on Google Street View; I ran it past the in-laws-to-be; I found a glittery (temporary) ring that would look great in Facebook photos (we took a trip to Tiffany's on 5th Avenue for the real thing)."</em></p>
+                            <p><em>"On the evening of 27 July 2015, after surprising Helen with a Broadway show (and in a British-level downpour), I asked some unsuspecting Canadian tourists to take a photo of us, got down on one soggy knee and popped the question."</em></p>
                         </div>
                     </div>
                     <div class="our-story__highlight-line"><em>We can't wait to see you all on our special day – let's party the night away!</em></div>
