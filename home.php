@@ -61,7 +61,7 @@ get_header(); ?>
                             <img class="svg" src="<?php echo get_template_directory_uri(); ?>/img/silhouette-helen.svg" alt="Helen Silhouette">
                             <h5>Helen</h5>
                             <p><em>"New York was the perfect place for the next chapter to begin. After James surprised me with dinner and a show on Broadway on a rainy Summer's evening, I thought it couldn't get much better. He had been acting a little strange all day - it all fell into place when at around midnight he got down on one knee and proposed! We celebrated with cocktails overlooking Times Square - certainly a night I'll never forget.</em></p>
-                            <p><em>"I can't believe where the last 10 and a half years have gone, from the Rat and Emu student bar in Dartington, Devon where it all began to our little haven in Hebden Bridge - it's been an adventure!"</em></p>
+                            <p><em>"I can't believe where the last ten and a half years have gone, from the Rat and Emu student bar in Dartington, Devon where it all began to our little haven in Hebden Bridge - it's been an adventure!"</em></p>
                         </div>
                         <div class="our-story__stories__james is-centered-text">
                             <img class="svg" src="<?php echo get_template_directory_uri(); ?>/img/silhouette-james.svg" alt="James Silhouette">

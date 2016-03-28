@@ -32,7 +32,7 @@
 		</section>
 		<section class="site-footer__contact-details">
 			<h5 class="light-gray uppercase spread">Get in touch</h5>
-			<a href="mailto:hello@handjwedding.co.uk">hello@helenandjameswedding.co.uk</a> <br>
+			<a href="mailto:hello@helenandjameswedding.co.uk">hello@helenandjameswedding.co.uk</a> <br>
 			Helen: 07921 159145 <br>
 			James: 07561 396658
 		</section>
