@@ -66,7 +66,7 @@ get_header(); ?>
                         <div class="our-story__stories__james is-centered-text">
                             <img class="svg" src="<?php echo get_template_directory_uri(); ?>/img/silhouette-james.svg" alt="James Silhouette">
                             <h5>James</h5>
-                            <p><em>"We got the chance to visit New York - one of our favourite cities - last summer. I knew it would be the perfect place to propose. I made plans in the few months before we left: I found a spot in Times Square on Google Street View; I ran it past the in-laws-to-be; I found a glittery (temporary) ring that would look great in Facebook photos (we took a trip to Tiffany's on 5th Avenue for the real thing)."</em></p>
+                            <p><em>"We got the chance to visit New York - one of our favourite cities - last summer. I knew it would be the perfect place to propose. I made plans in the few months before we left: I found a spot in Times Square on Google Street View; I ran it past the in-laws-to-be; I found a glittery (temporary) ring that would look great in Facebook photos (we took a trip to Tiffany's on 5th Avenue for the real thing).</em></p>
                             <p><em>"On the evening of 27 July 2015, after surprising Helen with a Broadway show (and in a British-level downpour), I asked some unsuspecting Canadian tourists to take a photo of us, got down on one soggy knee and popped the question."</em></p>
                         </div>
                     </div>
