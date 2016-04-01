@@ -10,6 +10,12 @@
 <?php wp_head(); ?>
 <!--    IE10+ specific targeting -->
     <link rel="stylesheet" type="text/css" href="<?php echo get_template_directory_uri(); ?>/ie.css" />
+    <!-- Chrome, Firefox OS, Opera and Vivaldi address bar colour -->
+    <meta name="theme-color" content="#a3d1d9">
+    <!-- Windows Phone address bar colour -->
+    <meta name="msapplication-navbutton-color" content="#a3d1d9">
+    <!-- iOS Safari address bar colour -->
+    <meta name="apple-mobile-web-app-status-bar-style" content="#a3d1d9">
 </head>
 
 <body <?php body_class(); ?>>
